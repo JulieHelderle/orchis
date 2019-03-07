@@ -27,7 +27,7 @@
     <% @contents.each do |content| %>
       <tr>
         <td><%= image_tag content.image, class: 'image' %></td>
-        <td><%= content.name %></td>
+        <td class="nom"><%= content.name %></td>
         <td><%= content.family %></td>
         <td><%= content.description %></td>
         <td><%= link_to 'Show', content %></td>
