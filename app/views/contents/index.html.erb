@@ -1,9 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Contents</h1>
+<h1>Orchis</h1>
+
+<link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet"> 
 
 <table>
+
   <thead>
+
+    <!-- Fonctionnel-->
     <tr>
       <th>Image</th>
       <th>Name</th>
@@ -11,12 +16,17 @@
       <th>Description</th>
       <th colspan="3"></th>
     </tr>
+
   </thead>
 
+
+
   <tbody>
+   
+  <!-- Fonctionnel -->
     <% @contents.each do |content| %>
       <tr>
-        <td><%= image_tag content.image %></td>
+        <td><%= image_tag content.image, class: 'image' %></td>
         <td><%= content.name %></td>
         <td><%= content.family %></td>
         <td><%= content.description %></td>
