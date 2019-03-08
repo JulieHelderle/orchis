@@ -1,6 +1,12 @@
 <p id="notice"><%= notice %></p>
 
+<header>
+
 <h1>Orchis</h1>
+
+</header>
+
+
 
 <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet"> 
 
@@ -24,8 +30,10 @@
   <tbody>
    
   <!-- Fonctionnel -->
+
     <% @contents.each do |content| %>
       <tr>
+
         <td><%= image_tag content.image, class: 'image' %></td>
         <td class="nom"><%= content.name %></td>
         <td><%= content.family %></td>

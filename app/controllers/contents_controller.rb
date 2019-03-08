@@ -21,10 +21,6 @@ class ContentsController < ApplicationController
   def edit
   end
 
-  # Page principale
-  def epiphyte
-  end
-
   # POST /contents
   # POST /contents.json
   def create
